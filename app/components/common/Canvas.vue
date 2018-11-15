@@ -1,8 +1,7 @@
 <template>
     <GridLayout 
         columns="*" 
-        rows="*" 
-        backgroundColor="lightgray" 
+        rows="*"
         ref="canvasGrid"
         @layoutChanged="onLayoutChanged">
         <Placeholder @creatingView="createCanvasView"

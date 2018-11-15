@@ -37,6 +37,9 @@ export function createStore() {
                             worker.terminate();
                             commit('setBtSocket', { btSocket: null })
                         }
+                        if (msg.data.error) {
+                            console.error(msg.data.error);
+                        } 
                     }
 
                     worker.onerror = function (err) {
